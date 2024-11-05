@@ -137,7 +137,7 @@ function App() {
     <div className="w-[24%] relative group px-2">
               <Product/>
     </div>
-    <div className="w-[24%] relative group px-2">
+     <div className="w-[24%] relative group px-2">
               <Product/>
     </div>
     <div className="w-[24%] relative group px-2">
@@ -148,7 +148,7 @@ function App() {
     </div>
     <div className="w-[24%] relative group px-2">
               <Product/>
-    </div>
+    </div> 
     </Slider>
           
         </Container>
@@ -156,8 +156,8 @@ function App() {
       {/* Product Part End */}
 
 
-      {/* Product Part Start  */}
-    <div className="w-full py-[70px] ">
+      
+    {/* <div className="w-full py-[70px] ">
         <Container>
           <Heading as={'h3'} text={'Our Bestsellers'} className={'font-dm font-bold text-[39px] pb-10'} />
           
@@ -180,8 +180,7 @@ function App() {
     </Slider>
           
         </Container>
-      </div>
-      {/* Product Part End */}
+      </div> */}
 
     </>
   )

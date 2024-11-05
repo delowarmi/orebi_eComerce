@@ -30,6 +30,7 @@ const Product = () => {
     <Heading as={'h3'} text={'$44.00'}/>
     </Flex>
 
+   
     </>
   )
 }

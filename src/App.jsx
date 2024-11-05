@@ -9,10 +9,30 @@ import { HiBars3BottomLeft } from "react-icons/hi2";
 import { FaSearch,FaUser,FaSortDown,FaShoppingCart,FaShuttleVan,FaUndoAlt} from "react-icons/fa";
 import { PiNumberTwoBold } from "react-icons/pi";
 import Heading from './components/Heading'
+ import AdsOne from '../src/assets/Ad_1.jpg'
+ import AdsTwo from '../src/assets/Ad_2.png'
+ import AdsThree from '../src/assets/Ad_3.jpg'
+import Product from './components/Product'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import PrevArrow from './components/PrevArrow'
+import NextArrow from './components/NextArrow'
+
+
 
 function App() {  
+  var settings = {
+    
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:<PrevArrow/>,
+    nextArrow:<NextArrow/>,
+  };
   return (
     <>
+    
       {/* Nav Part Start  */}
       <div className="w-full py-6">
         <Container>
@@ -93,6 +113,47 @@ function App() {
        </Container>
       </div>
       {/* Inpormation Part End   */}
+      {/* Ads Part Start  */}
+       <div className="w-full py-[100px]">
+        <Container>
+          <Flex className={'justify-between'}>
+            <div className="w-[49%]">
+              <Image ImgSrc={AdsOne}/>
+            </div>
+            <div className="w-[49%]">
+            <Image ImgSrc={AdsTwo}/>
+            <Image ImgSrc={AdsThree} className={'mt-9'}/>
+            </div>
+          </Flex>
+        </Container>
+      </div> 
+      {/* Ads Part End  */}
+      {/* Product Part Start  */}
+      <div className="w-full py-[100px]">
+        <Container>
+          
+          <Slider {...settings}>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    </Slider>
+          
+        </Container>
+      </div>
+      {/* Product Part End */}
+
     </>
   )
 }

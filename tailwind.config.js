@@ -10,6 +10,7 @@ export default {
         'navColor': '#767676',
         'navHColor': '#262626',
         'subnavColor': '#F5F5F3',
+        'arrowColor': '#979797',
       },
       fontFamily: {
           'dm': ['DM Sans'], 

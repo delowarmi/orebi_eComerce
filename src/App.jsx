@@ -114,7 +114,7 @@ function App() {
       </div>
       {/* Inpormation Part End   */}
       {/* Ads Part Start  */}
-       <div className="w-full py-[100px]">
+       <div className="w-full py-[60px]">
         <Container>
           <Flex className={'justify-between'}>
             <div className="w-[49%]">
@@ -129,8 +129,37 @@ function App() {
       </div> 
       {/* Ads Part End  */}
       {/* Product Part Start  */}
-      <div className="w-full py-[100px]">
+    <div className="w-full py-[70px] ">
         <Container>
+          <Heading as={'h3'} text={'New Arrivals'} className={'font-dm font-bold text-[39px] pb-10'} />
+          
+          <Slider {...settings}>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    <div className="w-[24%] relative group px-2">
+              <Product/>
+    </div>
+    </Slider>
+          
+        </Container>
+      </div>
+      {/* Product Part End */}
+
+
+      {/* Product Part Start  */}
+    <div className="w-full py-[70px] ">
+        <Container>
+          <Heading as={'h3'} text={'Our Bestsellers'} className={'font-dm font-bold text-[39px] pb-10'} />
           
           <Slider {...settings}>
     <div className="w-[24%] relative group px-2">

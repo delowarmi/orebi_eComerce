@@ -5,7 +5,7 @@ const NextArrow = (props) => {
 const { className, style, onClick } = props;
         return (
               <div
-              className={` inline-block p-4 text-[40px] text-red-700 absolute -translate-y-1/2 left-2 top-1/2 ${className}`}
+              className={` inline-block p-4 text-[40px] text-arrowColor absolute -translate-y-1/2 left-2 top-1/2 ${className}`}
               // style={{ ...style, display: "block", background: "red" }} 
               onClick={onClick}
             ><FaArrowAltCircleLeft /></div>
